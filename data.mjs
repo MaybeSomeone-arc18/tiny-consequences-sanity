@@ -56,19 +56,19 @@ export const fixture={
       "minutesLater": 0,
       "choices": [
         {
+          "next": "drawing",
           "label": "Draw a bench inside the chalk outline",
-          "why": "The drawing gives waiting passengers a place to gather, even without a seat.",
-          "next": "drawing"
+          "why": "The drawing gives waiting passengers a place to gather, even without a seat."
         },
         {
+          "next": "bakery",
           "label": "Ask the bakery if they saw it",
-          "why": "The baker watched the removal from across the street.",
-          "next": "bakery"
+          "why": "The baker watched the removal from across the street."
         },
         {
+          "next": "shift",
           "label": "Ask who needs the space most",
-          "why": "A night-shift worker knows what the first tram feels like without a seat.",
-          "next": "shift"
+          "why": "Mira knows what the first tram feels like without a seat."
         }
       ],
       "ripple": "The empty space changes where six strangers stand."
@@ -82,14 +82,14 @@ export const fixture={
       "minutesLater": 11,
       "choices": [
         {
-          "label": "Send the sketch to the Lost Things Office",
-          "why": "An archivist can turn a temporary drawing into a city request.",
-          "next": "office"
+          "next": "office",
+          "label": "Send the sketch to the office",
+          "why": "Give a temporary drawing a public record."
         },
         {
+          "next": "chalk",
           "label": "Leave chalk beside the outline",
-          "why": "The drawing becomes a public invitation to keep designing.",
-          "next": "chalk"
+          "why": "Let other passengers finish the design."
         }
       ],
       "ripple": "The chalk queue makes room for a wheelchair. The driver changes where the tram stops."
@@ -103,19 +103,19 @@ export const fixture={
       "minutesLater": 8,
       "choices": [
         {
+          "next": "garden",
           "label": "Follow the address",
-          "why": "You find out what happened to the bench before deciding what to ask for.",
-          "next": "garden"
+          "why": "Find the bench before asking where it belongs."
         },
         {
+          "next": "office",
           "label": "File a missing-bench report",
-          "why": "The office can trace the permit and make the decision visible.",
-          "next": "office"
+          "why": "Trace who signed the transfer."
         },
         {
-          "label": "Keep the receipt instead of filing it",
-          "why": "The folded paper leads to an after-hours record of every borrowed object.",
-          "next": "archive"
+          "next": "archive",
+          "label": "Keep the receipt",
+          "why": "The paper points to an after-hours record."
         }
       ],
       "ripple": "A paper receipt moves the search from the stop to the garden."
@@ -129,19 +129,19 @@ export const fixture={
       "minutesLater": 47,
       "choices": [
         {
-          "label": "Read the city notice",
-          "why": "The route ends at a decision that residents can inspect.",
-          "next": "ballot"
-        },
-        {
-          "label": "Open the old ledger",
-          "why": "The office kept a longer record of small absences.",
-          "next": "ledger"
-        },
-        {
+          "next": "crossing",
           "label": "Ask how the ballot reaches everyone",
-          "why": "The crossing by Paper Bridge makes the answer harder than a form.",
-          "next": "crossing"
+          "why": "Paper Bridge makes the answer harder than a form."
+        },
+        {
+          "next": "ledger",
+          "label": "Open the old ledger",
+          "why": "The office kept a record of small absences."
+        },
+        {
+          "next": "ballot",
+          "label": "Read the notice",
+          "why": "Residents can inspect the decision."
         }
       ],
       "ripple": "A private complaint becomes a question the whole city can answer."
@@ -155,19 +155,19 @@ export const fixture={
       "minutesLater": 28,
       "choices": [
         {
-          "label": "Map the missing seats",
-          "why": "A map turns one missing bench into a pattern the city can act on.",
-          "next": "ballot"
+          "next": "bridge",
+          "label": "Walk the bank",
+          "why": "The river path turns one bench into a question about access."
         },
         {
+          "next": "picnic",
           "label": "Stay a little longer",
-          "why": "A conversation at the garden reveals a different missing link.",
-          "next": "picnic"
+          "why": "A conversation reveals a missing path."
         },
         {
-          "label": "Walk the bank and count places to pause",
-          "why": "The river path turns one bench into a question about access.",
-          "next": "bridge"
+          "next": "ballot",
+          "label": "Map the missing seats",
+          "why": "One bench becomes a citywide question."
         }
       ],
       "ripple": "One borrowed bench exposes two other missing places to sit."
@@ -181,19 +181,9 @@ export const fixture={
       "minutesLater": 132,
       "choices": [
         {
-          "label": "Ask who drew the arrow",
-          "why": "The question brings you back to the person who started the drawing.",
-          "next": "drawing"
-        },
-        {
-          "label": "Leave a note for the morning route",
-          "why": "The transit office receives a record of what changed after dark.",
-          "next": "office"
-        },
-        {
-          "label": "Follow the lights to the archive",
-          "why": "An overnight clerk knows why the permit was never returned.",
-          "next": "archive"
+          "next": "closure",
+          "label": "Read the morning notice",
+          "why": "See the first decisions the city actually made."
         }
       ],
       "ripple": "The last tram carries a daytime choice into the night."
@@ -207,19 +197,14 @@ export const fixture={
       "minutesLater": 63,
       "choices": [
         {
+          "next": "ballot",
           "label": "Make a public map",
-          "why": "The separate notes become a shared picture of the city.",
-          "next": "ballot"
+          "why": "Separate notes become a shared picture."
         },
         {
-          "label": "Take the ledger to the tram stop",
-          "why": "People who wait at the stop can add places the office missed.",
-          "next": "night"
-        },
-        {
-          "label": "Read the oldest request",
-          "why": "A small entry about the bridge was filed before the bench went missing.",
-          "next": "crossing"
+          "next": "timing",
+          "label": "Bring the crossing request to the engineer",
+          "why": "The old entry finally gets a test."
         }
       ],
       "ripple": "Forgotten requests become a map that residents can inspect."
@@ -233,14 +218,9 @@ export const fixture={
       "minutesLater": 52,
       "choices": [
         {
+          "next": "ballot",
           "label": "Sketch the missing path",
-          "why": "A drawn route gives the neighbors something specific to bring to the city.",
-          "next": "bridge"
-        },
-        {
-          "label": "Return to the bakery with the story",
-          "why": "The baker knows which neighbors organized the garden.",
-          "next": "bakery"
+          "why": "A drawn route gives neighbors something specific to bring to the city."
         }
       ],
       "ripple": "A missing seat leads to a missing path."
@@ -254,14 +234,14 @@ export const fixture={
       "minutesLater": 96,
       "choices": [
         {
+          "next": "night",
           "label": "Follow the last tram",
-          "why": "The story loops into a new evening route.",
-          "next": "night"
+          "why": "See what this decision leaves behind after dark."
         },
         {
-          "label": "Ask what the count leaves out",
-          "why": "Numbers show the gap; a night-shift worker tells you its cost.",
-          "next": "shift"
+          "next": "timing",
+          "label": "Walk the bridge with the engineer",
+          "why": "Test one change while the larger plan is debated."
         }
       ],
       "ripple": "The city stops counting benches and starts counting places to rest."
@@ -275,14 +255,14 @@ export const fixture={
       "minutesLater": 17,
       "choices": [
         {
+          "next": "testimony",
           "label": "Let Mira tell the office herself",
-          "why": "The public record needs a person, not just a pin on a map.",
-          "next": "testimony"
+          "why": "A first-person account changes the public record."
         },
         {
+          "next": "crossing",
           "label": "Walk with her to the crossing",
-          "why": "A safer way home matters as much as a place to wait.",
-          "next": "crossing"
+          "why": "Her route home reveals another obstacle."
         }
       ],
       "ripple": "Mira turns an anonymous count into a first-person account."
@@ -296,14 +276,14 @@ export const fixture={
       "minutesLater": 21,
       "choices": [
         {
-          "label": "Send the photograph to the archive",
-          "why": "A fleeting mark becomes a record that cannot wash away.",
-          "next": "archive"
+          "next": "bridge",
+          "label": "Invite the garden neighbors to draw too",
+          "why": "The idea crosses the river before the rain arrives."
         },
         {
-          "label": "Invite the garden neighbors to draw too",
-          "why": "The idea crosses the river before the rain arrives.",
-          "next": "bridge"
+          "next": "archive",
+          "label": "Send the photograph to the archive",
+          "why": "Preserve the drawing before it washes away."
         }
       ],
       "ripple": "A temporary drawing survives as a shared plan."
@@ -317,14 +297,14 @@ export const fixture={
       "minutesLater": 41,
       "choices": [
         {
-          "label": "Mark the detour on the city map",
-          "why": "The distance between a visible bench and a reachable bench becomes evidence.",
-          "next": "ballot"
+          "next": "archive",
+          "label": "Ask about the crossing",
+          "why": "The archive holds an older request for the narrow path."
         },
         {
-          "label": "Ask the night clerk about the crossing",
-          "why": "The archive holds an older request for the same narrow path.",
-          "next": "archive"
+          "next": "ballot",
+          "label": "Mark the detour",
+          "why": "A reachable route belongs on the public map."
         }
       ],
       "ripple": "The map gains an accessible route, not just another bench marker."
@@ -338,14 +318,14 @@ export const fixture={
       "minutesLater": 74,
       "choices": [
         {
-          "label": "Take the unsigned promise to the office",
-          "why": "A vague disappearance becomes a traceable unfinished decision.",
-          "next": "office"
+          "next": "ballot",
+          "label": "Publish the unsigned promise",
+          "why": "A vague disappearance becomes a traceable unfinished decision."
         },
         {
-          "label": "Put the forms beside the old requests",
-          "why": "The delay is part of a pattern, not a clerical one-off.",
-          "next": "ledger"
+          "next": "testimony",
+          "label": "Ask Mira what the form misses",
+          "why": "A permit records a bench, not who needed it."
         }
       ],
       "ripple": "The city can see exactly which promise never became work."
@@ -359,14 +339,14 @@ export const fixture={
       "minutesLater": 58,
       "choices": [
         {
-          "label": "Time the crossing with him",
-          "why": "A measured delay can change the next signal plan.",
-          "next": "timing"
+          "next": "timing",
+          "label": "Time the crossing",
+          "why": "A measured delay can change the signal plan."
         },
         {
-          "label": "Add his route to the ballot",
-          "why": "The city must ask about movement, not only places to sit.",
-          "next": "ballot"
+          "next": "ballot",
+          "label": "Add the route to the ballot",
+          "why": "Ask about movement, not only seats."
         }
       ],
       "ripple": "A choice about seating becomes a choice about who can cross."
@@ -380,14 +360,14 @@ export const fixture={
       "minutesLater": 83,
       "choices": [
         {
+          "next": "ballot",
           "label": "Read the revised question",
-          "why": "The ballot now includes working hours and access.",
-          "next": "ballot"
+          "why": "The ballot now includes working hours and access."
         },
         {
-          "label": "Walk the route again after dark",
-          "why": "A daytime solution may fail the people who use the first tram.",
-          "next": "night"
+          "next": "night",
+          "label": "Walk the route after dark",
+          "why": "A daytime solution needs a night-time test."
         }
       ],
       "ripple": "A private experience changes the language of a public decision."
@@ -401,17 +381,22 @@ export const fixture={
       "minutesLater": 109,
       "choices": [
         {
-          "label": "Keep the bridge on the map",
-          "why": "One fix does not erase the unfinished path.",
-          "next": "ballot"
-        },
-        {
-          "label": "Tell Mira what changed",
-          "why": "The night route deserves a witness who uses it.",
-          "next": "shift"
+          "next": "night",
+          "label": "See the crossing after dark",
+          "why": "The extra time must work for the last tram, too."
         }
       ],
       "ripple": "One small repair lands; the deeper problem stays visible."
+    },
+    {
+      "id": "closure",
+      "title": "A place to stop",
+      "description": "In the morning, the crossing signal lasts twelve seconds longer. The replacement bench has a date, not just a promise, and Mira can read the plan at her stop. The bridge still needs work. The city has begun to keep track of it.",
+      "ripple": "A small change is complete. An unfinished one stays on the public record.",
+      "place": "stop",
+      "scale": "city",
+      "minutesLater": 162,
+      "choices": []
     }
   ]
 }
