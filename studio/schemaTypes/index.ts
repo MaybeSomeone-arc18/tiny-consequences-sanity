@@ -25,5 +25,14 @@ export const schemaTypes=[
   defineField({name:'prompt',type:'text'}),
   defineField({name:'start',type:'reference',to:[{type:'tinyConsequence'}],validation:R=>R.required()}),
   defineField({name:'editorialState',type:'string',options:{list:['draft','reviewed','published']},validation:R=>R.required()}),
+ ]}),
+ defineType({name:'tinyVisitorScene',title:'Visitor Scene (Draft Inbox)',type:'document',fields:[
+  defineField({name:'title',type:'string',validation:R=>R.required()}),
+  defineField({name:'description',type:'text',validation:R=>R.required()}),
+  defineField({name:'contributor',type:'string'}),
+  defineField({name:'place',type:'reference',to:[{type:'tinyPlace'}]}),
+  defineField({name:'editorialState',type:'string',options:{list:['draft','reviewed','published']},readOnly:true}),
+  defineField({name:'authorHash',type:'string',hidden:true,readOnly:true}),
+  defineField({name:'submittedAt',type:'datetime',readOnly:true}),
  ]})
 ]

@@ -105,6 +105,11 @@ export const fixture={
           "label": "Read the city notice",
           "why": "The route ends at a decision that residents can inspect.",
           "next": "ballot"
+        },
+        {
+          "label": "Open the old ledger",
+          "why": "The office kept a longer record of small absences.",
+          "next": "ledger"
         }
       ]
     },
@@ -120,6 +125,71 @@ export const fixture={
           "label": "Map the missing seats",
           "why": "A map turns one missing bench into a pattern the city can act on.",
           "next": "ballot"
+        },
+        {
+          "label": "Stay a little longer",
+          "why": "A conversation at the garden reveals a different missing link.",
+          "next": "picnic"
+        }
+      ]
+    },
+    {
+      "id": "night",
+      "title": "The last tram makes a detour",
+      "description": "A chalk arrow sends the last tram past the Rain Garden. For one evening, people use the stop as a meeting place rather than a place to leave.",
+      "place": "stop",
+      "scale": "street",
+      "minutesLater": 132,
+      "choices": [
+        {
+          "label": "Ask who drew the arrow",
+          "why": "The question brings you back to the person who started the drawing.",
+          "next": "drawing"
+        },
+        {
+          "label": "Leave a note for the morning route",
+          "why": "The transit office receives a record of what changed after dark.",
+          "next": "office"
+        }
+      ]
+    },
+    {
+      "id": "ledger",
+      "title": "A ledger of small absences",
+      "description": "The office has a shelf of requests that never reached a meeting: one bench, two trees, a quiet crossing, and a drinking fountain.",
+      "place": "hall",
+      "scale": "city",
+      "minutesLater": 63,
+      "choices": [
+        {
+          "label": "Make a public map",
+          "why": "The separate notes become a shared picture of the city.",
+          "next": "ballot"
+        },
+        {
+          "label": "Take the ledger to the tram stop",
+          "why": "People who wait at the stop can add places the office missed.",
+          "next": "night"
+        }
+      ]
+    },
+    {
+      "id": "picnic",
+      "title": "The long way home",
+      "description": "At the garden, a stranger offers you the bench. You ask what else is missing here, and the answer is not a seat but a path to the water.",
+      "place": "park",
+      "scale": "personal",
+      "minutesLater": 52,
+      "choices": [
+        {
+          "label": "Sketch the missing path",
+          "why": "A drawn route gives the neighbors something specific to bring to the city.",
+          "next": "ballot"
+        },
+        {
+          "label": "Return to the bakery with the story",
+          "why": "The baker knows which neighbors organized the garden.",
+          "next": "bakery"
         }
       ]
     },
@@ -130,7 +200,13 @@ export const fixture={
       "place": "hall",
       "scale": "city",
       "minutesLater": 96,
-      "choices": []
+      "choices": [
+        {
+          "label": "Follow the last tram",
+          "why": "The story loops into a new evening route.",
+          "next": "night"
+        }
+      ]
     }
   ]
 }
