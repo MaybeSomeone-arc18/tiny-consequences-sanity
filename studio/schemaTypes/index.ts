@@ -10,6 +10,7 @@ export const schemaTypes=[
  defineType({name:'tinyConsequence',title:'Consequence',type:'document',fields:[
   defineField({name:'title',type:'string',validation:R=>R.required()}),
   defineField({name:'description',type:'text',validation:R=>R.required()}),
+  defineField({name:'ripple',title:'Visible change left by this scene',type:'text',validation:R=>R.required()}),
   defineField({name:'place',type:'reference',to:[{type:'tinyPlace'}],validation:R=>R.required()}),
   defineField({name:'scale',type:'string',options:{list:['personal','street','city']},validation:R=>R.required()}),
   defineField({name:'editorialState',type:'string',options:{list:['draft','reviewed','published']},validation:R=>R.required()}),
@@ -30,8 +31,9 @@ export const schemaTypes=[
   defineField({name:'title',type:'string',validation:R=>R.required()}),
   defineField({name:'description',type:'text',validation:R=>R.required()}),
   defineField({name:'contributor',type:'string'}),
+  defineField({name:'editorialNote',title:'Editor note before publication',type:'text'}),
   defineField({name:'place',type:'reference',to:[{type:'tinyPlace'}]}),
-  defineField({name:'editorialState',type:'string',options:{list:['draft','reviewed','published']},readOnly:true}),
+  defineField({name:'editorialState',type:'string',options:{list:['draft','reviewed','published']},initialValue:'draft'}),
   defineField({name:'authorHash',type:'string',hidden:true,readOnly:true}),
   defineField({name:'submittedAt',type:'datetime',readOnly:true}),
  ]})
